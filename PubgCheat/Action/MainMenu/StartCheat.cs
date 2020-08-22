@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace PubgCheat
 {
@@ -42,7 +37,7 @@ namespace PubgCheat
 
             foreach (Process p in _aProc)
             {
-                _localProcessId.Add(p.Id);
+                _localProcessId.Add(Process.GetProcessById(p.Id).Parent().Id);
             }
             
             return _localProcessId;
