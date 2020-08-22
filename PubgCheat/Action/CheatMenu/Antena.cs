@@ -30,7 +30,6 @@ namespace PubgCheat.CheatMenu
             else if (ProcPID[0] == ProcparentPID[a+1])
                 ProcPID.RemoveAt(0);
             pId = ProcPID.FirstOrDefault();
-            //open = _mem.OpenProcess(pId);
             if (pId > 0)
             {
                 printer.SuccessMessage();

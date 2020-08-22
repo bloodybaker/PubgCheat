@@ -35,7 +35,7 @@ namespace PubgCheat
 
         public void SuccessMessage()
         {
-            
+            Console.WriteLine("Success!");
         }
 
         public void ErrorMessage()
